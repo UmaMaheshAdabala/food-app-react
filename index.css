@@ -1,0 +1,40 @@
+.logo {
+    width: 30%;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid black;
+    
+}
+.search {
+    margin:10px
+}
+.nav-cont >ul {
+    display: flex;
+}
+.nav-cont > ul >li {
+    padding: 5px;
+    margin: 10px;
+    list-style-type: none;
+}
+.restaurant-card{
+    
+    width: 200px;
+    margin:10px;
+    background-color: #F0F3F4  ;
+    padding: 5px;
+    
+}
+.restaurant-card:hover{
+    border: 1px solid black;
+    margin:10px;
+    cursor: pointer;
+    
+}
+.restaurant-card > img {
+    width:100%;
+    border-radius: 5px;
+    overflow-clip-margin: content-box;
+}
