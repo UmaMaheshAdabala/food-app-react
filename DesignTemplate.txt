@@ -1,0 +1,19 @@
+# Food App
+ 
+
+- Header
+    - Logo Container
+        - Logo
+    - Nav Container
+
+- Body
+   - Search
+   - RestaurantContainer
+   - Restaurant Card
+        - Img
+        - Name of Res, Star Rating , Time to delivery
+
+- Footer
+    - Copyright
+    - Links
+    - Address
