@@ -22,14 +22,20 @@
 .restaurant-card{
     
     width: 200px;
-    margin:10px;
+    margin: 5px;
     background-color: #F0F3F4  ;
     padding: 5px;
     
+    
+}
+.restaurant-cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .restaurant-card:hover{
     border: 1px solid black;
-    margin:10px;
+    
     cursor: pointer;
     
 }
