@@ -3,20 +3,21 @@ const Restaurant= ({
     cloudinaryImageId,
     name,
     cuisines,
-    area,
-    lastMileTravelString,
-    costForTwoString,
+    areaName,
+    sla,
+    costForTwo,
     avgRating,
   }) => {
 
     return(<div className="restaurant-card">
-        <img alt="Biryani" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/qtda4lwfmlwweg3ecibu"/>
+        <img alt="Biryani" src={CDN_URL+cloudinaryImageId}/>
         <h3>{name}</h3>
         <h4>{cuisines.join(", ")}</h4>
-        <h5>{area}</h5>
-        <h5>{lastMileTravelString}</h5>
-        <h5>{costForTwoString}</h5>
-        <h5>{avgRating}</h5>
+        <h4>{areaName}</h4>
+        <h4>{sla.lastMileTravel} KM</h4>
+        <h4>{sla.deliveryTime} minutes</h4>
+        <h4>{costForTwo}</h4>
+        <h4>{avgRating} Rating</h4>
     </div>)
 }
  export default Restaurant;
