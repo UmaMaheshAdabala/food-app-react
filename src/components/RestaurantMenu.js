@@ -36,6 +36,7 @@ const RestaurantMenu = () => {
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
   // console.log(category);
+  // const [showIndex, setShowIndex] = useState(0);
 
   return (
     <div className="text-center">
@@ -44,8 +45,13 @@ const RestaurantMenu = () => {
         {cuisines.join(", ")} - {costForTwoMessage}
       </h4>
       <h3>Menu</h3>
-      {category.map((category)=><RestaurantCategory data={category?.card?.card}/>)}
-      
+      {category.map((category, index) => (
+        <RestaurantCategory
+          data={category?.card?.card}
+          // showItems={index===showIndex?true:false}
+          // setShowIndex={()=>setShowIndex(index)}
+        />
+      ))}
     </div>
   );
 };

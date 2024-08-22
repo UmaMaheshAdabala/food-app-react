@@ -4,7 +4,8 @@ const RestaurantCategory = ({ data }) => {
 //   console.log(data);
   const [showItems, setShowItems] = useState(false);
   const clickhandler =()=>{
-    setShowItems(!showItems);
+    // setShowIndex();
+    setShowItems(!showItems)
   }
   return (
     <div className="w-6/12 mx-auto my-2 bg-gray-200 shadow-lg p-2">
@@ -14,6 +15,7 @@ const RestaurantCategory = ({ data }) => {
         <span>🔻</span>
       </div>
       {/* Item List */}
+      
     {showItems && <ItemList items={data.itemCards} />}
     </div>
   );
